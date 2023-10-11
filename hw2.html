@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .box {
+    border: 1px solid #000;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+  }
+  .yellow-box {
+        background-color: yellow;
+      }
+
+
+  .red-line {
+    border-bottom: 2px solid red;
+  }
+  p.a, p.b, p.c, p.d, p.e, p.f, p.g, p.h, p.i, p.j {
+    font-style: normal;
+  }
+
+  p.b { font-style: italic; }
+  p.c { font-style: oblique; }
+  p.d { color: red; text-align: right;}
+  p.e { font-weight: bolder; text-align:center; }
+  p.right { font-weight: bolder; text-align:right; }
+  p.left { text-align:left; }
+  p.underline { text-decoration: underline; }
+  p.linethrough { text-decoration: line-through; }
+  p.overline { text-decoration: overline; }
+  p.g { text-transform: uppercase; }
+  p.dotted { border-style: dotted; }
+  p.dashed { border-style: dashed; }
+  p.solid { border-style: solid; }
+  p.double { border-style: double; }
+  p.groove { border-style: groove; }
+  p.ridge { border-style: ridge; }
+  p.inset { border-style: inset; }
+  p.outset { border-style: outset; }
+  p.none { border-style: none; }
+  p.hidden { border-style: hidden; }
+  p.mix { border-style: dotted,dashed; }
+  p.large { font-size: 20px; }
+  p.i { font-size: 24px; }
+  p.redround { border-style:solid;border-radius: 25px;background-color: red; }
+  p.transparentround { border-style:solid;border-radius: 25px; }
+  p.radone { border-style:solid;border-radius:15px 50px 30px 5px }
+  p.radtwo { border-style:solid;border-radius:15px 50px 30px }
+  p.radthree { border-style:solid;border-radius:15px 50px }
+  p.radfour { border-style:solid;border-radius:50px/15px }
+  p.radfive { border-style:solid;border-radius:15px/50px }
+  p.radsix { border-style:solid;border-radius:50% }
+  p.j { color: blue; }
+</style>
+</head>
+<body>
+
+    <div class="box">
+        <p class="a">This is a paragraph in normal style.</p>
+        <p class="b">This is a paragraph in italic style.</p>
+        <p class="c">This is a paragraph in oblique style.</p>
+      </div>
+
+<div class="box yellow-box">
+  <p class="b">მოგესალმებით.</p>
+</div>
+
+<div class="box">
+  <p class="d"><b>My first CSS Page.</b></p>
+</div>
+
+<div class="box">
+  <p class="e">ჩემი სტუდენტები</p>
+  <p class="right">გოგონები</p>
+  <p class="left">მარი</p>
+  <p class="left">თათია</p>
+  <p class="left red-line">სალომე</p>
+  <p class="right">ბიჭები</p>
+  <p class="left">შოთკო</p>
+  <p class="left">ლაშა</p>
+  <p class="left red-line">გიორგი</p>
+
+</div>
+
+<div class="box">
+    <p class="f">This is a paragraph with underline style.</p>
+    <p class="linethrough">This is a paragraph with line through style.</p>
+    <p class="overline">This is a paragraph with overline style.</p>
+</div>
+
+<div class="box">
+  <p class="g">სამაგიდო კომპიუტერები თავის მხრივ შემდეგ ჯგუფებად იყოფა:</p>
+  <ul>
+    <li>უნივერსალური ტიპის კომპიუტერები</li>
+    <li>სპეციალური დანიშნულების კომპიუტერები</li>
+    <li>სამაგიდო მინი კომპიუტერები</li>
+    <li>სერვერები</li>
+  </ul>
+</div>
+
+<div class="box">
+  <p class="large">Border Style თვისება.</p>
+  <p class="h">მოცემული თვისება განსაზღვრავს როგორ აისახება ჩარჩოს გვერდები</p>
+  <p class="dotted">dotted - წერტილოვანი ჩარჩო</p>
+  <p class="dashed">dashed- წყვეტილი ჩარჩო</p>
+  <p class="solid">solid - უწყვეტი ჩარჩო</p>
+  <p class="double">double - ორმაგი ჩარჩო</p>
+  <p class="groove">groove - ჩაღრმავებული ჩარჩო</p>
+  <p class="ridge">ridge - ამობურცული ჩარჩო</p>
+  <p class="inset">inset - ჩარჩოში ჩაღრმავებული</p>
+  <p class="outset">outset - ჩარჩოში ამობურცული</p>
+  <p class="none">none - ჩარჩო არ არის</p>
+  <p class="hidden">hidden - დამალული ჩარჩო</p>
+  <p class="mix">mix - ჩარჩო შერეული საზღვრებით</p>
+</div>
+
+<div class="box">
+  <p class="i">border radius თვისება საშუალებას გაძლევთ ელემენტს მამრგვავებელი კუთხეები დაამატოთ</p>
+  <p class="i">მომრგვალებული კუთხეები ფონის მქონიე ელემენტისთვის:</p>
+  <p class="redround">მართკუთხედი მომრგვალებული კუთხეებით</p>
+  <p class="transparentround">მართკუთხედი მომრგვალებული კუთხეებით</p>
+</div>
+
+<div class="box">
+  <p class="radone">ოთხი მნიშვნელობა - border-radius: 15px 50px 30px 5px:</p>
+  <p class="radtwo">სამი მნიშვნელობა - border-radius: 15px 50px 30px:</p>
+  <p class="radtwo">ორი მნიშვნელობა - border-radius: 15px 50px:</p>
+</div>
+
+<div class="box">
+    <p class="radfour">ელიფსური კუთხე - border-radius: 50px/15px:</p>
+    <p class="radfive">ელიფსური კუთხე - border-radius: 15px/50px:</p>
+    <p class="radsix">ელიფსური კუთხე - border-radius: 50%:</p>
+  </div>
+
+</body>
+</html>
